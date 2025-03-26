@@ -10,5 +10,7 @@ Confidence Score
 Assignment of requests
 Deployment and Maintenance
 Conclusion
+
+
 [Architecture_Flow](https://github.com/ewfx/gaied-0-bytes/blob/main/artifacts/arch/Architecture%20Flow.png)
 
