@@ -542,7 +542,8 @@ def find_duplicate_emails(email_files: list) -> tuple[list, list]:
       
         
 def main():
-    # Create sample team skills CSV if it doesn't exist
+    # Main solution file
+    # Create sample team skills CSV if it doesn't exist 
     if not os.path.exists("team_skills.csv"):
         with open('email-config/types.json', 'r') as file:
             team_data = json.load(file)['employees']
