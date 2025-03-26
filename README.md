@@ -36,13 +36,12 @@ Improved Email Management during High Volume
 End-to-End Pipeline implemented to automated Service Request creation by extracting email content through Gen AI.
 
 ## 🛠️ How We Built It
-Python
+Python {Version Must be less than 3.13}
 Pandas
 PyMuPDF
 NLP- Spacy{Named Entity Recognition (NER)}
 IMAP + OCR
 OpenAI- Gemini 2.0, Crewai
-Transformers-Hugging Face
 Pytesseract
 Tesseract
 Hashlib
@@ -57,7 +56,7 @@ Confidence score calculation.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https:[//github.com/your-repo.git](https://github.com/ewfx/gaied-0-bytes)
    ```
 2. Install dependencies  
    ```sh
@@ -65,17 +64,16 @@ Confidence score calculation.
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   npm start  # or python crewai-email-triage.py
    ```
 
 ## 🏗️ Tech Stack
-Python
+Python {Version Must be less than 3.13}
 Pandas
 PyMuPDF
 NLP- Spacy{Named Entity Recognition (NER)}
 IMAP + OCR
 OpenAI- Gemini 2.0, Crewai
-Transformers-Hugging Face
 Pytesseract
 Tesseract
 Hashlib
