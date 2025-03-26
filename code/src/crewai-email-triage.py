@@ -444,7 +444,7 @@ def extract_email_bodies():
 # Example usage
 def process_email_samples():
     # Get all email files from the email_Samples directory
-    samples_dir = Path('email_Samples')
+    samples_dir = Path('test/email_Samples')
     email_files = [f for f in samples_dir.glob('*.txt')]
     
      # Find and filter out duplicates
@@ -544,10 +544,10 @@ def find_duplicate_emails(email_files: list) -> tuple[list, list]:
 def main():
     # Main solution file
     # Create sample team skills CSV if it doesn't exist 
-    if not os.path.exists("team_skills.csv"):
-        with open('email-config/types.json', 'r') as file:
+    if not os.path.exists("test/email_Samples/team_skills.csv"):
+        with open('src/email-config/types.json', 'r') as file:
             team_data = json.load(file)['employees']
-        pd.DataFrame(team_data).to_csv("team_skills.csv", index=False)
+        pd.DataFrame(team_data).to_csv("test/email_Samples/team_skills.csv", index=False)
     
     # Process all email samples
     process_email_samples()

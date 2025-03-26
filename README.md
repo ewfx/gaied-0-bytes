@@ -125,7 +125,7 @@ Produces structured analysis results including:
 7. Results Compilation
 
 ### Output Storage
-- Generates detailed analysis in `output_results/email_analysis_results.txt`
+- Generates detailed analysis in `test/output_results/email_analysis_results.txt`
 - Maintains structured format for easy parsing
 - Includes timestamps and processing metadata
 - Preserves full analysis chain
