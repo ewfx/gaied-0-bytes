@@ -1,3 +1,14 @@
-Replace this file with a document that describes the architecture and design of your solution architecture. This may include
-    - An architecture drawing exported into a png/jpeg format image
-    - A document in pdf or md format that describes your solution
+Concept Flow of Email Classification:
+
+Email Data Ingestion
+Preprocessing
+Context/ Intent Extraction with OCR
+Prioritization
+Categorize-Request /Sub-Request Type
+Duplicate Detection
+Confidence Score
+Assignment of requests
+Deployment and Maintenance
+Conclusion
+[Architecture_Flow.](https://github.com/ewfx/gaied-0-bytes/blob/main/artifacts/arch/Architecture%20Flow.png)
+
