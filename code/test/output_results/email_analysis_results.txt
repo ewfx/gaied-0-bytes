@@ -1,0 +1,780 @@
+
+Processing: email_adj.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Loan Adjustment Notification
+FROM: adjustments@loanservicing.com
+
+SUMMARY:
+This email from loanservicing.com to John Smith at john.smith@example.com notifies him of an adjustment to loan account #L-45872-93A processed on March 15, 2025. The adjustment amount is $258.75 due to an interest rate recalculation. The email provides a customer service contact number (800-555-1234) and encourages the recipient to reply to the email with questions. Two attachments are included: Adjustment_Statement_L-45872-93A.pdf, detailing the calculation methods and applied changes, and Updated_Loan_Terms.pdf, reflecting the adjustment.
+
+INTENT CLASSIFICATION:
+{
+  "Primary intent": "Account Management",
+  "Priority level": "Medium",
+  "Response time expectation": "48 hours",
+  "Department(s) responsible": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "Request type or Sub_request_types responsible": [
+    "Adjustment",
+    "Interest"
+  ],
+  "Sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "John Smith",
+  "account_id": "L-45872-93A",
+  "product_service": "loan",
+  "issue_description": "Adjustment to loan account due to an interest rate recalculation.",
+  "deadline": null,
+  "amount": "$258.75",
+  "requested_action": "Reply to the email with questions",
+  "previous_communication": null,
+  "contact_info": "800-555-1234, john.smith@example.com"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E001",
+  "assigned_employee_name": "Alice Johnson",
+  "rationale": "Alice Johnson is a Loan Adjustment Specialist in Loan Servicing. Her request types include 'Adjustment', which directly aligns with the request. She is available and has relevant skills.",
+  "confidence_score": 95,
+  "alternative_assignee": "E004"
+}
+
+==================================================
+
+Processing: email_amend.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Amendment Fees - Loan Closing Notice
+FROM: closings@loanservicing.com
+
+SUMMARY:
+This email from closings@loanservicing.com to Amanda Martinez concerns amendment fees applied to loan account #LA-34098-56D during the closing process. An amendment fee of $325.00 was applied due to a term extension request made on March 17, 2025. This fee will be included in the final closing statement. The email also mentions two attachments: 'Amendment_Fee_Schedule_LA-34098-56D.pdf' which details the schedule of amendment fees and applicable terms, and 'Term_Extension_Agreement.pdf' which contains the term extension agreement documentation. For clarification, Amanda Martinez is advised to contact the closing department at (800) 555-4567.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "48 hours",
+  "department(s)_responsible": [
+    "Loan Servicing",
+    "Loan Closing"
+  ],
+  "request_type_or_sub_request_types_responsible": [
+    "Amendment Fees"
+  ],
+  "sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Amanda Martinez",
+  "account_id": "LA-34098-56D",
+  "product_service": "Loan",
+  "issue_description": "Amendment fee of $325.00 applied due to a term extension request made on March 17, 2025.",
+  "deadline": null,
+  "amount": "325.00",
+  "requested_action": "Contact the closing department for clarification.",
+  "previous_communication": null,
+  "contact_info": "(800) 555-4567, closings@loanservicing.com"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E002",
+  "assigned_employee_name": "Bob Smith",
+  "rationale": "Bob Smith is a Closing Specialist in Loan Closing and handles 'Amendment Fees', making him the most relevant choice despite his high workload and limited availability. He possesses the specific expertise required for this request.",
+  "confidence_score": 85,
+  "alternative_assignee": {
+    "employee_id": "E001",
+    "employee_name": "Alice Johnson",
+    "rationale": "Alice Johnson is in Loan Servicing, is available, and has a medium workload. While she doesn't specifically handle Amendment Fees, her loan adjustment experience makes her a suitable backup."
+  }
+}
+
+==================================================
+
+Processing: email_au.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: AU Transfer Notification
+FROM: transfers@loanservicing.com
+
+SUMMARY:
+This email from loanservicing.com to Emily Johnson confirms an AU Transfer processed on loan account #AC-78932-01B on March 18, 2025. The transfer amount is $4,750.00 with reference number TRF-2025-03187652. The email instructs the recipient to contact them immediately at (800) 555-2345 if the transfer was unauthorized or if there are any questions. An attachment, Transfer_Confirmation_TRF-2025-03187652.pdf, provides the official transfer confirmation document.
+
+INTENT CLASSIFICATION:
+{
+  "Primary intent": "General Inquiry",
+  "Priority level": "Medium",
+  "Response time expectation": "48 hours",
+  "Department(s) responsible": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "Request type or Sub_request_types responsible": [
+    "AU Transfer",
+    "Money Movement-Outbound"
+  ],
+  "Sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Emily Johnson",
+  "account_id": "AC-78932-01B",
+  "product_service": "AU Transfer",
+  "issue_description": "Unauthorized transfer or questions about the transfer",
+  "deadline": "",
+  "amount": "$4,750.00",
+  "requested_action": "Contact them immediately if the transfer was unauthorized or if there are any questions",
+  "previous_communication": "",
+  "contact_info": "(800) 555-2345"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E001",
+  "assigned_employee_name": "Alice Johnson",
+  "rationale": "Alice is in Loan Servicing, handles AU Transfers, and is currently available with a medium workload. This aligns well with the request type and department.",
+  "confidence_score": 90,
+  "alternative_assignee": "E006"
+}
+
+==================================================
+
+Processing: email_cashless.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Cashless Roll Commitment Change
+FROM: commitments@loanservicing.com
+
+SUMMARY:
+This email informs William Lee about a cashless roll commitment change for loan account #CR-92465-37F, effective March 25, 2025. The commitment amount remains at $175,000.00 (previous and new). The transaction ID is CRC-2025-038724. The email directs the recipient to review the attached 'Cashless_Roll_Agreement_CR-92465-37F.pdf' and 'Updated_Term_Sheet.pdf' for full details. Questions can be directed to the account manager at (800) 555-6789.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "72 hours",
+  "department_responsible": [
+    "Loan Servicing",
+    "Account Management"
+  ],
+  "request_type": [
+    "Cashless Roll",
+    "commitment change"
+  ],
+  "sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "William Lee",
+  "account_id": "CR-92465-37F",
+  "product_service": "Cashless roll commitment",
+  "issue_description": "Cashless roll commitment change",
+  "deadline": "2025-03-25",
+  "amount": "$175,000.00",
+  "requested_action": "Review attached 'Cashless_Roll_Agreement_CR-92465-37F.pdf' and 'Updated_Term_Sheet.pdf' for full details.",
+  "previous_communication": null,
+  "contact_info": "(800) 555-6789"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E003",
+  "assigned_employee_name": "Carol White",
+  "rationale": "Carol White is a Commitment Change Manager in Account Management, specializing in Cashless Roll requests. Her workload is low and she is currently available, making her the ideal candidate for this task.",
+  "confidence_score": 95,
+  "alternative_assignee": "E001"
+}
+
+==================================================
+
+Processing: email_creditFee.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Letter of Credit Fee Payment
+FROM: lc@loanservicing.com
+
+SUMMARY:
+```json
+{
+  "summary": "This email from lc@loanservicing.com to Jessica Hill confirms the payment of a Letter of Credit fee related to loan account #LC-41573-26J. The email provides the following details:\n\n*   **LC Reference Number:** LOC-2025-7652419\n*   **Fee Amount:** $450.00\n*   **Payment Date:** March 21, 2025\n*   **LC Expiry Date:** September 21, 2025\n\nThe email states that the fee has been processed according to the terms of the Letter of Credit agreement. Jessica Hill is instructed to contact the LC department at (800) 555-0123 with any questions.\n\nThe email includes two attachments:\n\n*   LC\_Fee\_Receipt\_LOC-2025-7652419.pdf: Receipt for the Letter of Credit fee payment.\n*   Letter\_of\_Credit\_Details.pdf: Full Letter of Credit terms and conditions."
+}
+```
+
+INTENT CLASSIFICATION:
+{
+  "intent": "Account Management",
+  "priority": "Low",
+  "response_time": "72 hours",
+  "responsible_departments": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "request_type": [
+    "Fee Payment",
+    "Letter of Credit Fee"
+  ],
+  "sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Jessica Hill",
+  "account_id": "LC-41573-26J",
+  "product_service": "Letter of Credit",
+  "issue_description": "Payment of a Letter of Credit fee",
+  "deadline": "2025-09-21",
+  "amount": "450.00",
+  "requested_action": "Contact the LC department with any questions",
+  "previous_communication": null,
+  "contact_info": "lc@loanservicing.com, (800) 555-0123"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E004",
+  "assigned_employee_name": "David Garcia",
+  "rationale": "David Garcia is a Fee Management Specialist in Financial Operations, which aligns perfectly with the request for a Letter of Credit Fee payment. He possesses the required skills in fee calculation and billing systems, along with domain knowledge in corporate banking. He is also currently available.",
+  "confidence_score": 95,
+  "alternative_assignee": {
+    "employee_id": "E001",
+    "employee_name": "Alice Johnson"
+  }
+}
+
+==================================================
+
+Processing: email_decesed.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Commitment Decrease Notification
+FROM: commitments@loanservicing.com
+
+SUMMARY:
+This email notifies Daniel Robinson about a decrease in the commitment amount for loan account #CD-83915-42G. The commitment decreased from $425,000.00 to $350,000.00, a reduction of $75,000.00, effective March 22, 2025. The email advises contacting them at (800) 555-7890 if the change was not requested or if there are questions. Two attachments are included: 'Commitment_Decrease_Notice_CD-83915-42G.pdf' and 'Revised_Loan_Agreement.pdf'.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "48 hours",
+  "department(s)_responsible": [
+    "Loan Servicing",
+    "Account Management"
+  ],
+  "request_type": [
+    "commitment change",
+    "Decrease"
+  ],
+  "sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Daniel Robinson",
+  "account_id": "CD-83915-42G",
+  "product_service": "loan account",
+  "issue_description": "decrease in the commitment amount",
+  "deadline": "2025-03-22",
+  "amount": "$425,000.00, $350,000.00, $75,000.00",
+  "requested_action": "contact them at (800) 555-7890 if the change was not requested or if there are questions",
+  "previous_communication": null,
+  "contact_info": "(800) 555-7890"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E003",
+  "assigned_employee_name": "Carol White",
+  "rationale": "Carol White, as a Commitment Change Manager in Account Management, is the most suitable candidate. Her role specifically includes handling 'Commitment Change' requests, with 'Decrease' listed as a sub-request type. She has relevant skills in Loan Modification and Term Sheet Processing, domain knowledge in Commercial Real Estate (likely relevant to loan commitment changes), and is currently available with a low workload. This aligns perfectly with the request type, priority, and required expertise.",
+  "confidence_score": 95,
+  "alternative_assignee": "E001"
+}
+
+==================================================
+
+Processing: email_inboun.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Inbound Payment Received - Principal, Interest, and Fees
+FROM: payments@loanservicing.com
+
+SUMMARY:
+This email from loanservicing.com to Timothy Nelson confirms receipt of a payment for loan account #PF-63917-52N. The total payment of $3,475.50 includes $2,000.00 for principal, $1,350.50 for interest, and $125.00 for a late payment fee. The payment was received on March 18, 2025, via online banking. The new principal balance is $193,000.00, and interest is paid through April 18, 2025. All fees are settled. The email includes attached PDF documents: a full payment receipt, a detailed payment breakdown, and a fee satisfaction notice. Questions can be directed to customer service at (800) 555-4567.
+
+INTENT CLASSIFICATION:
+{
+  "intent": "Account Management",
+  "priority": "Low",
+  "response_time": "1 week",
+  "departments": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "request_type": [
+    "Money Movement-Inbound",
+    "Principal+Interest+Fee",
+    "Fee Payment",
+    "Principal",
+    "Interest"
+  ],
+  "sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Timothy Nelson",
+  "account_id": "PF-63917-52N",
+  "product_service": "loan account",
+  "issue_description": null,
+  "deadline": null,
+  "amount": "$3,475.50 (total payment), $2,000.00 (principal), $1,350.50 (interest), $125.00 (late payment fee), $193,000.00 (new principal balance)",
+  "requested_action": null,
+  "previous_communication": null,
+  "contact_info": "(800) 555-4567"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E005",
+  "assigned_employee_name": "Emma Wilson",
+  "rationale": "Emma Wilson is the best match because her role as an Inbound Payment Specialist directly aligns with the 'Money Movement-Inbound' request type and the specific sub-request types of 'Principal', 'Interest', and 'Principal+Interest+Fee'. Her domain knowledge covers both Retail and Commercial Loans, making her suitable for handling various loan types. Although her workload is high and availability is limited, the request priority is low and the response time is one week, which provides sufficient time for her to address the request. Additionally, her technical skills include Payment Processing and Reconciliation, which are crucial for this task.",
+  "confidence_score": 90,
+  "alternative_assignee": {
+    "employee_id": "E004",
+    "employee_name": "David Garcia",
+    "rationale": "David Garcia is a good alternative because he is a Fee Management Specialist in Financial Operations, and the request involves fee payments. He has relevant skills in Fee Calculation and knowledge of Corporate Banking. His workload is medium, and he is available."
+  }
+}
+
+==================================================
+
+Processing: email_increased.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Commitment Increase Notification
+FROM: commitments@loanservicing.com
+
+SUMMARY:
+This email informs Michelle Scott about an increase in the commitment amount for her loan account #CI-26781-59H. The previous commitment amount was $300,000.00, and the new commitment amount is $375,000.00, representing an increase of $75,000.00. The effective date of this change is March 19, 2025. This change was processed based on Michelle's request and approval by the underwriting department. The email includes three attachments: Commitment_Increase_Approval_CI-26781-59H.pdf (approval documentation for the commitment increase), Amended_Loan_Agreement.pdf (the amended loan agreement with the new commitment terms), and Updated_Disclosure_Statement.pdf (an updated disclosure statement reflecting the new commitment). Michelle is advised to review the attached amended loan agreement and contact her loan officer at (800) 555-8901 if she has any questions.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "72 hours",
+  "departments_responsible": [
+    "Loan Servicing",
+    "Account Management"
+  ],
+  "request_types": [
+    "commitment change",
+    "Increase"
+  ],
+  "sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Michelle Scott",
+  "account_id": "CI-26781-59H",
+  "product_service": "Loan",
+  "issue_description": "Increase in commitment amount",
+  "deadline": "2025-03-19",
+  "amount": "$375,000.00",
+  "requested_action": "Review the attached amended loan agreement and contact her loan officer if she has any questions.",
+  "previous_communication": null,
+  "contact_info": "(800) 555-8901"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E003",
+  "assigned_employee_name": "Carol White",
+  "rationale": "Carol White is a Commitment Change Manager in Account Management. The request is specifically for an 'Increase' in commitment amount, which aligns perfectly with her request and sub-request types. She is available and has relevant skills and domain knowledge.",
+  "confidence_score": 95,
+  "alternative_assignee": "E001"
+}
+
+==================================================
+
+Processing: email_Interest.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Inbound Interest Payment Received
+FROM: payments@loanservicing.com
+
+SUMMARY:
+This email from Loan Servicing Department confirms that an interest payment of $875.25 has been received from Rachel Harris and applied to loan account #MI-95437-18L. The payment covers the interest period from February 15, 2025, to March 15, 2025, and was received on March 15, 2025, via Electronic Funds Transfer. The account is now current through March 15, 2025. The email includes two attachments: 'Interest_Payment_Receipt_MI-95437-18L.pdf' (receipt for the interest payment) and 'Interest_Calculation_Statement.pdf' (statement showing interest calculation details). For questions, customer service can be reached at (800) 555-2345.
+
+INTENT CLASSIFICATION:
+{
+  "Primary intent": "Account Management",
+  "Priority level": "Low",
+  "Response time expectation": "72 hours",
+  "Department(s) responsible": [
+    "Loan Servicing",
+    "Account Management",
+    "Financial Operations"
+  ],
+  "Request type or Sub_request_types responsible": [
+    "Interest",
+    "Money Movement-Inbound"
+  ],
+  "Sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Rachel Harris",
+  "account_id": "MI-95437-18L",
+  "product_service": "loan account",
+  "issue_description": null,
+  "deadline": null,
+  "amount": "875.25",
+  "requested_action": null,
+  "previous_communication": null,
+  "contact_info": "(800) 555-2345"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E005",
+  "assigned_employee_name": "Emma Wilson",
+  "rationale": "Emma Wilson is an Inbound Payment Specialist whose request types include 'Money Movement-Inbound' and 'Interest', aligning perfectly with the request. She possesses the necessary technical skills and domain knowledge. While her availability is limited, the low priority and 72-hour response time make her a suitable choice.",
+  "confidence_score": 90,
+  "alternative_assignee": "E001"
+}
+
+==================================================
+
+Processing: email_ongoing.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Ongoing Fee Payment Notification
+FROM: fees@loanservicing.com
+
+SUMMARY:
+This email is a notification to Elizabeth Clark regarding an ongoing servicing fee payment of $125.00 for loan account #FO-57126-83I. The payment was processed successfully via auto-debit on March 16, 2025, as per the loan agreement. Questions can be directed to customer service at (800) 555-9012. The email includes two attachments: Fee_Payment_Receipt_FO-57126-83I.pdf (receipt for the payment) and Fee_Schedule.pdf (complete fee schedule).
+
+INTENT CLASSIFICATION:
+{
+  "intent": "Account Management",
+  "priority": "Low",
+  "response_time": "1 week",
+  "departments": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "request_type": [
+    "Fee Payment",
+    "Ongoing Fee"
+  ],
+  "sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Elizabeth Clark",
+  "account_id": "FO-57126-83I",
+  "product_service": "servicing fee payment",
+  "issue_description": null,
+  "deadline": null,
+  "amount": "$125.00",
+  "requested_action": null,
+  "previous_communication": "loan agreement",
+  "contact_info": "(800) 555-9012"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E004",
+  "assigned_employee_name": "David Garcia",
+  "rationale": "David Garcia is a Fee Management Specialist in Financial Operations. The request is for a fee payment (ongoing fee), which directly aligns with his role and expertise. He has the necessary skills (Fee Calculation, Billing Systems) and domain knowledge (Corporate Banking). He is also currently available.",
+  "confidence_score": 95,
+  "alternative_assignee": {
+    "employee_id": "E001",
+    "employee_name": "Alice Johnson",
+    "reason": "Alice Johnson from Loan Servicing has payment processing skills and experience with loan management systems, making her a viable backup."
+  }
+}
+
+==================================================
+
+Processing: email_princi.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Inbound Principal Payment Received
+FROM: payments@loanservicing.com
+
+SUMMARY:
+This email confirms a principal payment of $5,000.00 received on March 14, 2025, and applied to loan account #MP-36892-74K. The payment was made via wire transfer, confirmation number PMT-2025-03146937. The new principal balance is $145,000.00. The email includes two attachments: 'Principal_Payment_Confirmation_MP-36892-74K.pdf' and 'Updated_Loan_Balance_Statement.pdf'. Customer service can be contacted at (800) 555-1234 for questions.
+
+INTENT CLASSIFICATION:
+{
+  "Primary intent": "Account Management",
+  "Priority level": "Low",
+  "Response time expectation": "72 hours",
+  "Department(s) responsible": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "Request type or Sub_request_types": [
+    "Principal",
+    "Money Movement-Inbound"
+  ],
+  "Sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "",
+  "account_id": "MP-36892-74K",
+  "product_service": "Loan",
+  "issue_description": "",
+  "deadline": "2025-03-14",
+  "amount": "$5,000.00",
+  "requested_action": "",
+  "previous_communication": "",
+  "contact_info": "(800) 555-1234"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E005",
+  "assigned_employee_name": "Emma Wilson",
+  "rationale": "Emma is the best match because her request types include 'Money Movement-Inbound' and sub-request types include 'Principal'. She also has relevant skills in Payment Processing and knowledge of Retail and Commercial Loans.",
+  "confidence_score": 85,
+  "alternative_assignee": "E002"
+}
+
+==================================================
+
+Processing: email_prin_inte.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Inbound Principal and Interest Payment Received
+FROM: payments@loanservicing.com
+
+SUMMARY:
+This email from Loan Servicing Department confirms receipt of a combined principal and interest payment for loan account #PI-28564-39M. The total amount received was $2,350.75, with $1,500.00 allocated to principal and $850.75 to interest. The payment was received on March 17, 2025, via check, and the confirmation number is PMT-2025-03172845. The new principal balance is $218,500.00, and interest has been paid through April 15, 2025. The email includes attached documents: Combined_Payment_Confirmation_PI-28564-39M.pdf (confirmation of payment), Payment_Allocation_Statement.pdf (payment allocation details), and Updated_Amortization_Schedule.pdf (updated amortization schedule). For questions, customer service can be reached at (800) 555-3456.
+
+INTENT CLASSIFICATION:
+{
+  "Primary intent": "Account Management",
+  "Priority level": "Low",
+  "Response time expectation": "72 hours",
+  "Department(s) responsible": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "Request type or Sub_request_types responsible": [
+    "Principal",
+    "Interest",
+    "Principal + Interest"
+  ],
+  "Sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": null,
+  "account_id": "PI-28564-39M",
+  "product_service": "Loan",
+  "issue_description": "Inbound Principal and Interest Payment Received",
+  "deadline": null,
+  "amount": "$2,350.75 (total), $1,500.00 (principal), $850.75 (interest), $218,500.00 (new principal balance)",
+  "requested_action": null,
+  "previous_communication": null,
+  "contact_info": "(800) 555-3456"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E001",
+  "assigned_employee_name": "Alice Johnson",
+  "rationale": "Alice is in Loan Servicing, which aligns with the request's department. She has relevant skills in Loan Management System and Payment Processing, her workload is medium, and she is available. While her request types are not a perfect match, her overall profile makes her suitable. ",
+  "confidence_score": 85,
+  "alternative_assignee": {
+    "employee_id": "E005",
+    "employee_name": "Emma Wilson",
+    "rationale": "Emma is an Inbound Payment Specialist whose sub-request types include Principal and Interest. However, her availability is limited due to a high workload."
+  }
+}
+
+==================================================
+
+Processing: email_rel.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Principal Reallocation - Loan Closing Notice
+FROM: closings@loanservicing.com
+
+SUMMARY:
+This email from closings@loanservicing.com notifies Thomas Brown about a principal reallocation on loan account #LP-67843-21E during the closing process. The original principal of $250,000.00 has been reallocated to $245,750.00 due to a partial prepayment. This change will be reflected in the closing documents. The email includes two attachments: 'Principal_Reallocation_Statement_LP-67843-21E.pdf' which details the reallocation, and 'Updated_Amortization_Schedule.pdf' showing the new amortization schedule. Thomas Brown is instructed to contact his loan officer at (800) 555-5678 with any questions.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "48 hours",
+  "department_s_responsible": [
+    "Loan Servicing",
+    "Loan Closing"
+  ],
+  "request_type_or_sub_request_types_responsible": [
+    "Reallocation Principal",
+    "Closing Notice"
+  ],
+  "sentiment": "Neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Thomas Brown",
+  "account_id": "LP-67843-21E",
+  "product_service": "Loan",
+  "issue_description": "Principal reallocation occurred on loan account #LP-67843-21E during the closing process due to a partial prepayment. The original principal of $250,000.00 was reallocated to $245,750.00. The client, Thomas Brown, was notified of this change and provided with a Principal Reallocation Statement and an updated Amortization Schedule. The client was instructed to contact their loan officer with any questions.",
+  "deadline": null,
+  "amount": "$250,000.00, $245,750.00",
+  "requested_action": "No action is required from Loan Servicing or Loan Closing at this time, as the client was informed and instructed to contact their loan officer. Monitor for any follow-up inquiries from the client or the loan officer regarding this reallocation.",
+  "previous_communication": null,
+  "contact_info": "(800) 555-5678, closings@loanservicing.com"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E002",
+  "assigned_employee_name": "Bob Smith",
+  "rationale": "Bob Smith is the most suitable candidate because his role as a Closing Specialist and his expertise in 'Closing Notice' requests, specifically 'Reallocation Principal' sub-request types, directly align with the request. Although his workload is high and availability is limited, his specific skills make him the primary choice.",
+  "confidence_score": 85,
+  "alternative_assignee": {
+    "employee_id": "E001",
+    "employee_name": "Alice Johnson",
+    "rationale": "Alice Johnson, as a Loan Adjustment Specialist in Loan Servicing, possesses relevant skills in loan management and adjustment. While she may not specialize in closing notices, her domain knowledge and availability make her a viable alternative if Bob is unavailable."
+  }
+}
+
+==================================================
+
+Processing: email_reloc.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Reallocation of Fees - Loan Closing Notice
+FROM: closings@loanservicing.com
+
+SUMMARY:
+This email from closings@loanservicing.com to Robert Chen concerns a fee reallocation for loan account #LN-56209-87C. The original fee amount of $750.00 has been reallocated to $625.00, effective March 20, 2025. This reallocation is in accordance with the loan agreement and will be reflected in the final closing statement. The email includes two attachments: 'Fee_Reallocation_Details_LN-56209-87C.pdf' (itemized breakdown of reallocated fees) and 'Updated_Closing_Disclosure.pdf' (updated closing disclosure with new fee structure). Robert Chen is advised to contact his loan officer at (800) 555-3456 with any questions.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Medium",
+  "response_time_expectation": "48 hours",
+  "department(s)_responsible": [
+    "Loan Servicing",
+    "Loan Closing",
+    "Account Management",
+    "Financial Operations"
+  ],
+  "request_type_or_sub_request_types": [
+    "Closing Notice",
+    "Reallocation Fees"
+  ],
+  "sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Robert Chen",
+  "account_id": "LN-56209-87C",
+  "product_service": "Loan",
+  "issue_description": "Fee reallocation",
+  "deadline": "2025-03-20",
+  "amount": "$750.00, $625.00",
+  "requested_action": "Contact loan officer with any questions",
+  "previous_communication": null,
+  "contact_info": "(800) 555-3456, closings@loanservicing.com"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E004",
+  "assigned_employee_name": "David Garcia",
+  "rationale": "David Garcia in Financial Operations handles 'Fee Payment' requests, which aligns with the 'Reallocation Fees' sub-request type. His workload is medium, and he is available.",
+  "confidence_score": 85,
+  "alternative_assignee": "E002"
+}
+
+==================================================
+
+Processing: email_time.txt
+==================================================
+======= EMAIL TRIAGE RESULTS =======
+SUBJECT: Timebound Inbound Payment Received
+FROM: payments@loanservicing.com
+
+SUMMARY:
+Email from Loan Servicing Department to Jonathan Baker confirming the receipt of a timebound payment for loan account #TB-74258-61P. Key details:
+- Amount Received: $2,750.00
+- Date Received: March 20, 2025
+- Payment Method: Mobile Banking
+- Payment Period: March 1, 2025 to March 31, 2025
+- Confirmation Number: PMT-2025-03201586
+
+Payment has been applied according to the timebound payment agreement. Next payment due on April 20, 2025. Two attachments included: Timebound_Payment_Confirmation_TB-74258-61P.pdf (confirmation of payment receipt) and Payment_Schedule_Update.pdf (updated payment schedule). Contact customer service at (800) 555-5678 for questions.
+
+INTENT CLASSIFICATION:
+{
+  "primary_intent": "Account Management",
+  "priority_level": "Low",
+  "response_time_expectation": "72 hours",
+  "department(s)_responsible": [
+    "Loan Servicing",
+    "Financial Operations"
+  ],
+  "request_type_or_Sub_request_types_responsible": [
+    "Money Movement-Inbound",
+    "Timebound"
+  ],
+  "sentiment": "neutral"
+}
+
+EXTRACTED ATTRIBUTES:
+{
+  "customer_name": "Jonathan Baker",
+  "account_id": "TB-74258-61P",
+  "product_service": "Loan",
+  "issue_description": "Timebound payment received",
+  "deadline": "2025-04-20",
+  "amount": "2750.00",
+  "requested_action": null,
+  "previous_communication": "Timebound payment agreement",
+  "contact_info": "(800) 555-5678"
+}
+
+ASSIGNMENT:
+{
+  "assigned_employee_id": "E005",
+  "assigned_employee_name": "Emma Wilson",
+  "rationale": "Emma Wilson is the Inbound Payment Specialist, which perfectly matches the 'Money Movement-Inbound' request type and 'Timebound' sub-request type. She has the required skills and domain knowledge. Despite her limited availability, her expertise makes her the primary choice.",
+  "confidence_score": 85,
+  "alternative_assignee": {
+    "employee_id": "E001",
+    "employee_name": "Alice Johnson",
+    "rationale": "Alice Johnson in Loan Servicing has relevant skills in loan management and payment processing, and is available. She can handle the request if Emma is unavailable.",
+    "confidence_score": 70
+  }
+}
+
+==================================================
