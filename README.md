@@ -1,6 +1,6 @@
 # Email Triage System
 
-An intelligent email processing system for loan servicing operations using CrewAI and LangChain with emini-2.0-flash LLM.
+An intelligent email processing system for loan servicing operations using CrewAI and LangChain with emini-2.0-flash LLM. Python version must be less than 3.13.
 
 ## Detailed Features
 
